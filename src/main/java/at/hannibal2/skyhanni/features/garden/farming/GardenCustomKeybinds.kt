@@ -28,6 +28,7 @@ object GardenCustomKeybinds {
         map[mcSettings.keyBindBack] = { config.back }
         map[mcSettings.keyBindJump] = { config.jump }
         map[mcSettings.keyBindSneak] = { config.sneak }
+        map[mcSettings.keyBindSprint] = { config.sprint }
     }
 
     private fun isEnabled() = GardenAPI.inGarden() && config.enabled
@@ -77,6 +78,6 @@ object GardenCustomKeybinds {
         event.move(3, "garden.keyBindForward", "garden.keyBind.forward")
         event.move(3, "garden.keyBindBack", "garden.keyBind.back")
         event.move(3, "garden.keyBindJump", "garden.keyBind.jump")
-        event.move(3, "garden.keyBindSneak", "garden.keyBind.sneak")
+        event.move(3, "garden.keyBindSprint", "garden.keyBind.sprint")
     }
 }
