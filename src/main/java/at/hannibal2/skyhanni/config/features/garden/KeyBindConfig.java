@@ -27,6 +27,7 @@ public class KeyBindConfig {
         back = Keyboard.KEY_NONE;
         jump = Keyboard.KEY_NONE;
         sneak = Keyboard.KEY_NONE;
+        sprint = Keyboard.KEY_NONE;
 
         Minecraft.getMinecraft().thePlayer.closeScreen();
     };
@@ -42,6 +43,7 @@ public class KeyBindConfig {
         back = Keyboard.KEY_S;
         jump = Keyboard.KEY_SPACE;
         sneak = Keyboard.KEY_LSHIFT;
+        sprint = Keyboard.KEY_LCONTROL
         Minecraft.getMinecraft().thePlayer.closeScreen();
     };
 
@@ -84,4 +86,9 @@ public class KeyBindConfig {
     @ConfigOption(name = "Sneak", desc = "")
     @ConfigEditorKeybind(defaultKey = Keyboard.KEY_LSHIFT)
     public int sneak = Keyboard.KEY_LSHIFT;
+
+    @Expose
+    @ConfigOption(name = "Sprint", desc = "")
+    @ConfigEditorKeybind(defaultKey = Keyboard.KEY_LCONTROL)
+    public int sprint = Keyboard.KEY_LCONTROL;
 }
